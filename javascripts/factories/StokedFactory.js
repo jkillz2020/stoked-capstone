@@ -25,7 +25,7 @@ app.factory('StokedFactory', function($q, $http, FIREBASE_CONFIG){
       $http.post(`${FIREBASE_CONFIG.databaseURL}/Stokes.json`,
         JSON.stringify({
           city: newStoke.city,
-          resortName: newStoke.firstName,
+          resortName: newStoke.resortName,
           rating: newStoke.rating,
           state: newStoke.state,
           streetAddress: newStoke.streetAddress,
@@ -74,7 +74,7 @@ var editStoke = function(editStoke){
       $http.put(`${FIREBASE_CONFIG.databaseURL}/Stokes/${editStoke.id}.json`, 
         JSON.stringify({
           city: editStoke.city,
-          resortName: editStoke.firstName,
+          resortName: editStoke.resortName,
           rating: editStoke.rating,
           state: editStoke.state,
           streetAddress: editStoke.streetAddress,
