@@ -1,0 +1,58 @@
+{
+  "Stokes":{
+    "stoke0":{
+      "resortName": "Breckenridge Ski Resort",
+      "streetAddress": "500 Main Street",
+      "city": "Breckenridge",
+      "state": "Colorado",
+      "zipcode": "80424",
+      "rating": "5",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+    },
+    "stoke1":{
+      "resortName": "Park City Mountain Resort",
+      "streetAddress": "1345 Lowell Ave",
+      "city": "Park City",
+      "state": "Utah",
+      "zipcode": "84060",
+      "rating": "4",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+    },
+    "stoke2":{
+      "resortName": "Taos Ski Valley, Inc.",
+      "streetAddress": "116 Sutton Place",
+      "city": "Taos",
+      "state": "New Mexico",
+      "zipcode": "87525",
+      "rating": "5",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+      }
+    },
+    "Runs": {
+    "run0": {
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
+      "title": "Puppies",
+      "stokeId": "00"
+    },
+    "run1": {
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
+      "title": "Kittens",
+      "stokeId": "01"
+    },
+    "run2": {
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
+      "title": "Dinosaurs",
+      "stokeId": "02"
+    }
+  },
+    "users":{
+    "user0":{
+      "uid":"",
+      "username": "josh"
+    },
+    "user1":{
+      "uid":"dLEbCuNL7UhQtWvyOVst5hA2xX52",
+      "username": "a"
+    }
+  }
+  }

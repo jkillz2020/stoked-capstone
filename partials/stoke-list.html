@@ -1,0 +1,11 @@
+<div ng-repeat="stoke in stokes">
+  <div class="col-md-3 col-md-offset-1">
+      <div class="row"><a href="#/stokes/view/{{stoke.id}}">{{stoke.resortName}}</a></div>
+      <div class="row">{{stoke.streetAddress}}</div>
+      <div class="row">{{stoke.city}}</div>
+      <div class="row">{{stoke.state}}</div>
+      <div class="row">{{stoke.zipcode}}</div>
+      <div class="row">Stoke Level: {{stoke.rating}}</div>
+      </div>
+      <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteStoke(stoke.id)"></button></div>
+  </div>
