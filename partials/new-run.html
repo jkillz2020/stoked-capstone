@@ -1,0 +1,22 @@
+<form>
+
+  <div class="form-group col-md-10 col-md-offset-1"> <!-- Run Name -->
+    <label for="run_name" class="control-label">Run Name</label>
+    <input type="text" class="form-control" id="run_name" name="run_name" placeholder="Trail/Run Name" ng-model="newRun.name">
+  </div> 
+
+  <div class="form-group col-md-3 col-md-offset-1"> <!-- Rating Button -->
+    <label for="rating_id" class="control-label">Stoke Rating</label>
+    <select class="form-control" id="rating_id" ng-model="newRun.rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>  
+    </select>         
+  </div>
+
+  <div class="form-group col-md-5 col-md-offset-5"> <!-- Submit Button -->
+    <button type="button" class="btn btn-danger" ng-click="addNewRun()">Submit New Run!</button>
+  </div>       
+  </form>

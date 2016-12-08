@@ -43,6 +43,11 @@ app.config(function($routeProvider) {
       controller: 'NewResortCtrl',
       resolve: {isAuth}
     })
+    .when('/resorts/new-run', {
+      templateUrl: 'partials/new-run.html',
+      controller: 'NewRunCtrl',
+      resolve: {isAuth}
+    })
     .when('/resorts/snowreport', {
       templateUrl: 'partials/snow-rpt.html',
       controller: 'SnowRptCtrl',
