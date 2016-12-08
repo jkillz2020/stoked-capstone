@@ -68,7 +68,7 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
 
 var editRun= function(editRun){
     return $q((resolve, reject)=>{
-      $http.put(`${FIREBASE_CONFIG.databaseURL}/Runs/${editRunId}.json`, 
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/Runs/${editRun.id}.json`, 
         JSON.stringify({
           name: editRun.name,
           resortId: editRun.resortId,

@@ -58,9 +58,19 @@ app.config(function($routeProvider) {
       controller: 'ResortDetailCtrl',
       resolve: {isAuth}
     })
+    .when('/runs/view/:id', {
+      templateUrl: 'partials/run-view.html',
+      controller: 'RunDetailCtrl',
+      resolve: {isAuth}
+    })
     .when('/resorts/edit/:id', {
       templateUrl: 'partials/new-resort.html',
       controller: 'ResortEditCtrl',
+      resolve: {isAuth}
+    })
+    .when('/runs/edit/:id', {
+      templateUrl: 'partials/new-run.html',
+      controller: 'EditRunCtrl',
       resolve: {isAuth}
     })
     .when('/logout', {
