@@ -1,0 +1,16 @@
+<h1>Resort: {{selectedResort.resortName}}</h1>
+<button class="btn btn-info"><a ng-href="#/resorts/edit/{{selectedResort.id}}">Edit</a></button>
+<h2>Street Address: {{selectedResort.streetAddress}}</h2>
+<h2>City: {{selectedResort.city}}</h2>
+<h2>Zipcode: {{selectedResort.zipcode}}</h2>
+<h2>My Runs</h2>
+<div ng-repeat="run in runs">  
+<div class="col-md-3 col-md-offset-1">
+      <div class="row"><a href="#/runs/view/{{Resort.id}}">{{Resort.resortName}}</a></div>
+      <div class="row">{{Resort.streetAddress}}</div>
+      </div>
+      <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteResort(Resort.id)"></button></div>
+  </div>
+
+<!-- <h2>Run Name: {{Run.name}}</h2>
+<h2>Run Name: {{Run.rating}}</h2> -->

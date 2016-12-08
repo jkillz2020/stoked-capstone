@@ -18,7 +18,7 @@ let logMeIn = function(loginStuff){
         $rootScope.user = userCreds;
         $scope.login = {};
         $scope.register = {};
-        $location.url("/stokes/new");
+        $location.url("/resorts/new");
     })
   };
   $scope.setLoginContainer = function(){

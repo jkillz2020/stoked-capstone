@@ -33,29 +33,29 @@ app.config(function($routeProvider) {
       templateUrl: 'partials/auth.html',
       controller: 'AuthCtrl'
     })
-    .when('/stokes/list', {
-      templateUrl: 'partials/stoke-list.html',
-      controller: 'StokeListCtrl',
+    .when('/resorts/list', {
+      templateUrl: 'partials/resort-list.html',
+      controller: 'ResortListCtrl',
       resolve: {isAuth}
     })
-    .when('/stokes/new', {
-      templateUrl: 'partials/new-stoke.html',
-      controller: 'NewStokeCtrl',
+    .when('/resorts/new', {
+      templateUrl: 'partials/new-resort.html',
+      controller: 'NewResortCtrl',
       resolve: {isAuth}
     })
-    .when('/stokes/snowreport', {
+    .when('/resorts/snowreport', {
       templateUrl: 'partials/snow-rpt.html',
       controller: 'SnowRptCtrl',
       resolve: {isAuth}
     })
-    .when('/stokes/view/:id', {
-      templateUrl: 'partials/stoke-view.html',
-      controller: 'StokeDetailCtrl',
+    .when('/resorts/view/:id', {
+      templateUrl: 'partials/resort-view.html',
+      controller: 'ResortDetailCtrl',
       resolve: {isAuth}
     })
-    .when('/stokes/edit/:id', {
-      templateUrl: 'partials/new-stoke.html',
-      controller: 'StokeEditCtrl',
+    .when('/resorts/edit/:id', {
+      templateUrl: 'partials/new-resort.html',
+      controller: 'ResortEditCtrl',
       resolve: {isAuth}
     })
     .when('/logout', {

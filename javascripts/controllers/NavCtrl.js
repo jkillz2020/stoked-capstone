@@ -7,20 +7,20 @@ app.controller('NavCtrl', function($scope){
       url: "#/logout"
     }, 
     {
-      name:"My Stokes",
-      url:"#/stokes/list"
+      name:"My Resorts",
+      url:"#/resorts/list"
     }, 
     {
-      name:"New Stoke",
-      url: "#/stokes/new"
+      name:"New Resort",
+      url: "#/resorts/new"
     },
     {
       name:"Get Snow Report",
-      url: "#/stokes/snowreport"
+      url: "#/resorts/snowreport"
     },
     {
-      name:"Edit Stoke",
-      url: "#/stokes/edit"
+      name:"Edit Resort",
+      url: "#/resorts/edit"
     }
   ];
 });

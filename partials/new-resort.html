@@ -2,22 +2,22 @@
 
   <div class="form-group col-md-4 col-md-offset-1"> <!-- Resort Name -->
     <label for="resort_name" class="control-label">Resort Name</label>
-    <input type="text" class="form-control" id="resort_name" name="resort_name" placeholder="Ski Resort Name" ng-model="newStoke.resortName">
+    <input type="text" class="form-control" id="resort_name" name="resort_name" placeholder="Ski Resort Name" ng-model="newResort.resortName">
   </div> 
 
   <div class="form-group col-md-10 col-md-offset-1"> <!-- Street 1 -->
     <label for="street1_id" class="control-label">Street Address 1</label>
-    <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o" ng-model="newStoke.streetAddress">
+    <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Street address, P.O. box, company name, c/o" ng-model="newResort.streetAddress">
   </div>          
 
   <div class="form-group col-md-3 col-md-offset-1"> <!-- City-->
     <label for="city_id" class="control-label">City</label>
-    <input type="text" class="form-control" id="city_id" name="city" placeholder="Breckenridge" ng-model="newStoke.city">
+    <input type="text" class="form-control" id="city_id" name="city" placeholder="Breckenridge" ng-model="newResort.city">
   </div>                  
 
   <div class="form-group col-md-3 col-md-offset-1"> <!-- State Button -->
     <label for="state_id" class="control-label">State</label>
-    <select class="form-control" id="state_id" ng-model="newStoke.state">
+    <select class="form-control" id="state_id" ng-model="newResort.state">
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
@@ -74,11 +74,11 @@
 
   <div class="form-group col-md-2 col-md-offset-1"> <!-- Zip Code-->
     <label for="zip_id" class="control-label">Zip Code</label>
-    <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####" ng-model="newStoke.zipcode">
+    <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####" ng-model="newResort.zipcode">
   </div>  
 
   <div class="form-group col-md-5 col-md-offset-5"> <!-- Submit Button -->
-    <button type="button" class="btn btn-danger" ng-click="addNewStoke()">Submit New Stoke!</button>
+    <button type="button" class="btn btn-danger" ng-click="addNewResort()">Submit New Resort!</button>
   </div>     
 
 </form> 
