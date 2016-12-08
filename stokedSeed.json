@@ -28,24 +28,27 @@
       "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
       }
     },
-    "Runs": {
+  "Runs": {
     "run0": {
       "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
-      "title": "Puppies",
-      "resortId": "resort0"
+      "name": "Puppies",
+      "resortId": "resort0",
+      "rating": "5"
     },
     "run1": {
       "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
-      "title": "Kittens",
-      "resortId": "resort1"
+      "name": "Kittens",
+      "resortId": "resort1",
+      "rating": "3"
     },
     "run2": {
       "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52",
-      "title": "Dinosaurs",
-      "resortId": "resort2"
+      "name": "Dinosaurs",
+      "resortId": "resort2",
+      "rating": "5"
     }
   },
-    "users":{
+  "users":{
     "user0":{
       "uid":"",
       "username": "josh"

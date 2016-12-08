@@ -6,11 +6,10 @@
 <h2>My Runs</h2>
 <div ng-repeat="run in runs">  
 <div class="col-md-3 col-md-offset-1">
-      <div class="row"><a href="#/runs/view/{{Resort.id}}">{{Resort.resortName}}</a></div>
-      <div class="row">{{Resort.streetAddress}}</div>
+      <div class="row"><a href="#/runs/view/{{run.id}}">{{run.name}}</a></div>
+      <div class="row">{{run.rating}}</div>
       </div>
-      <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteResort(Resort.id)"></button></div>
+      <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteRun(run.id)"></button></div>
   </div>
 
-<!-- <h2>Run Name: {{Run.name}}</h2>
-<h2>Run Name: {{Run.rating}}</h2> -->
+
