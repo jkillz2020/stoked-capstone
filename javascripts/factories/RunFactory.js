@@ -20,12 +20,12 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
     })
   }
 
-  var postNewRun = function(newRun{
+  var postNewRun = function(newRun){
     return $q((resolve, reject)=>{
       $http.post(`${FIREBASE_CONFIG.databaseURL}/Runs.json`,
         JSON.stringify({
           name: newRun.name,
-          stokeId: newRun.stokeId,
+          resortId: newRun.resortId,
           rating: newRun.rating,
           uid: newRun.uid
         })
@@ -66,12 +66,12 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
   }
 
 
-var editRun= function(editRun{
+var editRun= function(editRun){
     return $q((resolve, reject)=>{
-      $http.put(`${FIREBASE_CONFIG.databaseURL}/Runs/${editRunid}.json`, 
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/Runs/${editRun.id}.json`, 
         JSON.stringify({
           name: editRun.name,
-          stokeId: editRun.stokeId,
+          resortId: editRun.resortId,
           rating: editRun.rating,
           uid: editRun.uid
       })

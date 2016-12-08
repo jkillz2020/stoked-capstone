@@ -1,0 +1,11 @@
+<div ng-repeat="resort in resorts">
+  <div class="col-md-3 col-md-offset-1">
+      <div class="row"><a href="#/resorts/view/{{resort.id}}">{{resort.resortName}}</a></div>
+      <div class="row">{{resort.streetAddress}}</div>
+      <div class="row">{{resort.city}}</div>
+      <div class="row">{{resort.state}}</div>
+      <div class="row">{{resort.zipcode}}</div>
+      <div class="row">Resort Stoke Level: {{resort.rating}}</div>
+      </div>
+      <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteResort(resort.id)"></button></div>
+  </div>
