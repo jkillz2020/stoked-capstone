@@ -76,6 +76,16 @@
     <label for="zip_id" class="control-label">Zip Code</label>
     <input type="text" class="form-control" id="zip_id" name="zip" placeholder="#####" ng-model="newResort.zipcode">
   </div>  
+  <div class="form-group col-md-3 col-md-offset-1"> <!-- Rating Button -->
+    <label for="rating_id" class="control-label">Stoke Rating</label>
+    <select class="form-control" id="rating_id" ng-model="newResort.rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>  
+    </select>         
+  </div>
 
   <div class="form-group col-md-5 col-md-offset-5"> <!-- Submit Button -->
     <button type="button" class="btn btn-danger" ng-click="addNewResort()">Submit New Resort!</button>
