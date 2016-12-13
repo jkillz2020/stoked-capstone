@@ -10,13 +10,21 @@ app.controller('ResortDetailCtrl', function($scope, $routeParams, $rootScope, Re
   })
   $scope.runs = [];
 
+
   let getRuns = function(){
     RunFactory.getRunList($rootScope.user.uid).then(function(fbRuns){
-      $scope.runs=fbRuns;
+      $scope.runs = [];
+      fbRuns.forEach(function(myRun){
+      if(myRun.resortId == resortId){
+        $scope.runs.push(myRun);
+      }
+
+      })
     })
   }
 
   getRuns();
+
 
   $scope.deleteRun = function(runId){
     console.log("you deleted a run", runId);

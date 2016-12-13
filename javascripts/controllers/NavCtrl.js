@@ -13,14 +13,6 @@ app.controller('NavCtrl', function($scope){
     {
       name:"New Resort",
       url: "#/resorts/new"
-    },
-    {
-      name:"Get Snow Report",
-      url: "#/resorts/snowreport"
-    },
-    {
-      name:"Edit Resort",
-      url: "#/resorts/edit"
     }
   ];
 });
