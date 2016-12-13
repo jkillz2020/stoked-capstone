@@ -1,4 +1,5 @@
-body { background-color:#333; }
+body { background-color:#333; 
+        color: white;}
 #snow{
   background: none;
   font-family: Androgyne;
@@ -35,6 +36,9 @@ body { background-color:#333; }
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 } 
 
+input{
+  color: black;
+}
 // #title{
 //   margin-left: 39%;
 // }

@@ -6,7 +6,6 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
     return $q((resolve, reject)=>{
       $http.get(`${FIREBASE_CONFIG.databaseURL}/Runs.json?orderBy="uid"&equalTo="${userId}"`)
         .success(function(response){
-          console.log("response", response)
           let run =[];
           Object.keys(response).forEach(function(key){
             response[key].id=key;
@@ -43,7 +42,6 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
     return $q((resolve, reject) => {
       $http.delete(`${FIREBASE_CONFIG.databaseURL}/Runs/${runId}.json`)
       .success(function(deleteResponse){
-        console.log("success")
         resolve(deleteResponse);
       })
       .error(function(deleteError){
@@ -56,7 +54,6 @@ app.factory('RunFactory', function($q, $http, FIREBASE_CONFIG){
     return $q((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/Runs/${runId}.json`)
       .success(function(getSingleResponse){
-        console.log("success", getSingleResponse)
         resolve(getSingleResponse);
       })
       .error(function(getSingleError){
