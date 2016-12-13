@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller("ResortListCtrl", function($scope, $rootScope, ResortFactory){
+app.controller("ResortListCtrl", function($scope, $rootScope, $location, SnowRptFactory, ResortFactory){
   $scope.resorts = [];
 
   let getResorts = function(){
@@ -10,6 +10,17 @@ app.controller("ResortListCtrl", function($scope, $rootScope, ResortFactory){
   }
 
   getResorts();
+
+$scope.selectedCity = {};
+
+  let getSnowRpt = function(){
+      $scope.selectedCity = cityName;
+    SnowRptFactory.getSnowReport(cityName).then(function(){
+      $scope.go = function ( path ) {
+      $location.path( path );
+    }
+  })
+}
 
   $scope.deleteResort = function(resortId){
     console.log("you deleted a resort", resortId);

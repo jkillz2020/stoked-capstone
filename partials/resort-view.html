@@ -6,12 +6,12 @@
 <h2>My Runs</h2>
 <div ng-repeat="run in runs">  
 <div class="col-md-3 col-md-offset-1">
-      <div class="row"><a href="#/runs/view/{{run.id}}">Trail Name: {{run.name}}</a></div>
+      <div class="row"><a ng-href="#/runs/view/{{run.id}}">Trail Name: {{run.name}}</a></div>
       <div class="row">Rating: {{run.rating}}</div>
       </div>
       <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteRun(run.id)"></button></div>
   </div>
 
-  <button class="btn btn-info"><a ng-href="#/resorts/new-run">Add New Run!</a></button>
+  <button class="btn btn-info"><a ng-href="#/resorts/new-run/{{selectedResort.id}}">Add New Run!</a></button>
 
 
