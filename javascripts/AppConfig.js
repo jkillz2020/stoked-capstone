@@ -43,6 +43,11 @@ app.config(function($routeProvider) {
       controller: 'NewResortCtrl',
       resolve: {isAuth}
     })
+    .when('/resorts/places', {
+      templateUrl: 'partials/places.html',
+      controller: 'PlacesApiCtrl',
+      resolve: {isAuth}
+    })
     .when('/resorts/new-run/:resortId', {
       templateUrl: 'partials/new-run.html',
       controller: 'NewRunCtrl',
