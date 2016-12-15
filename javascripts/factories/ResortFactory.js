@@ -23,10 +23,8 @@ app.factory('ResortFactory', function($q, $http, FIREBASE_CONFIG){
     return $q((resolve, reject)=>{
       $http.post(`${FIREBASE_CONFIG.databaseURL}/Resorts.json`,
         JSON.stringify({
-          // city: newResort.city,
           resortName: newResort.resortName,
           rating: newResort.rating,
-          // state: newResort.state,
           address: newResort.address,
           zipcode: newResort.zipcode,
           uid: newResort.uid
@@ -70,11 +68,9 @@ var editResort = function(editResort){
     return $q((resolve, reject)=>{
       $http.put(`${FIREBASE_CONFIG.databaseURL}/Resorts/${editResort.id}.json`, 
         JSON.stringify({
-          city: editResort.city,
           resortName: editResort.resortName,
           rating: editResort.rating,
-          state: editResort.state,
-          streetAddress: editResort.streetAddress,
+          address: editResort.address,
           zipcode: editResort.zipcode,
           uid: editResort.uid
       })
