@@ -7,7 +7,8 @@ app.controller("PlacesApiCtrl", function($scope, $rootScope, $routeParams, $loca
     PlacesFactory.getPlaces(searchInfo).then(function(response){
     $scope.placeInfo = response.results;
     placeInfo = response.results; 
-    // console.log("scope.placeInfo", $scope.placeInfo);
+    let zipcode = placeInfo[0].formatted_address.slice(-20, -15);
+    console.log("zipcode", zipcode);
     
 
     })
@@ -20,10 +21,11 @@ app.controller("PlacesApiCtrl", function($scope, $rootScope, $routeParams, $loca
       uid: $rootScope.user.uid,
       address: placeInfo[0].formatted_address,
       resortName: placeInfo[0].name,
+      zipcode: placeInfo[0].formatted_address.slice(-20, -15),
       rating: ""
     };
     // console.log("placeInfo", placeInfo);
-    // console.log("ApiResort", ApiResort);
+    console.log("ApiResort", ApiResort);
     ResortFactory.postNewResort(ApiResort).then(function(resortId){
       $location.url("/resorts/list");
     $scope.newResort= {};

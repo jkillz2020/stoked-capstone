@@ -4,10 +4,7 @@
   <div class="col-md-3 col-md-offset-1">
       <div class="row"><a href="#/resorts/view/{{resort.id}}">{{resort.resortName}}</a></div>
       <div class="row">{{resort.address}}</div>
-      <div class="row">{{resort.city}}</div>
-      <!-- <div class="col-xs-3"><button class="btn btn-info" ng-click="getSnowRpt(resort.city)">Get Snow Report!</button></div> -->
-      <div class="row">{{resort.state}}</div>
-      <div class="row"><a ng-href="#/resorts/snowreport/{{resort.zipcode}}">{{resort.zipcode}}</a></div>
+      <div class="row"><a ng-href="#/resorts/snowreport/{{resort.zipcode}}">Get Weather Report!</a></div>
       <div class="row">Resort Stoke Level: {{resort.rating}}</div>
       </div>
       <div class="col-xs-1"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteResort(resort.id)"></button></div>

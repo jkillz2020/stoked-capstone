@@ -28,7 +28,7 @@ app.factory('ResortFactory', function($q, $http, FIREBASE_CONFIG){
           rating: newResort.rating,
           // state: newResort.state,
           address: newResort.address,
-          // zipcode: newResort.zipcode,
+          zipcode: newResort.zipcode,
           uid: newResort.uid
         })
       )
