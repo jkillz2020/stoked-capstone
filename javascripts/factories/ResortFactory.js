@@ -23,12 +23,12 @@ app.factory('ResortFactory', function($q, $http, FIREBASE_CONFIG){
     return $q((resolve, reject)=>{
       $http.post(`${FIREBASE_CONFIG.databaseURL}/Resorts.json`,
         JSON.stringify({
-          city: newResort.city,
+          // city: newResort.city,
           resortName: newResort.resortName,
           rating: newResort.rating,
-          state: newResort.state,
-          streetAddress: newResort.streetAddress,
-          zipcode: newResort.zipcode,
+          // state: newResort.state,
+          address: newResort.address,
+          // zipcode: newResort.zipcode,
           uid: newResort.uid
         })
       )

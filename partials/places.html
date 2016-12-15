@@ -3,7 +3,11 @@
   <div ng-repeat="place in placeInfo">
 
   <div class="col-md-3">
-        <div class="row">{{place.name}}</div>
-        <div class="row">{{place.formatted_address}}</div>
+        <div class="row" ng-model="resortName">{{place.name}}</div>
+        <div class="row" ng-model="address">{{place.formatted_address}}</div>
+        <img ng-src="{{place.photos.html_attributions}}"></img>
+        <button type="button" class="btn btn-danger" ng-click="addNewFoundResort()">Submit New Resort!</button>
       </div>
   </div>  
+
+  <!-- <img class="imageStandardized" ng-src="{{pin.url}}"></img> -->

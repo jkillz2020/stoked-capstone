@@ -7,7 +7,6 @@ app.factory('PlacesFactory', function($q, $http, FIREBASE_CONFIG, PLACES_API_CON
       $http.get(`https://maps.googleapis.com/maps/api/place/textsearch/json?query=${searchInfo}&key=${PLACES_API_CONFIG.client_secret}`)
         .success(function(response){
           resolve(response);
-          console.log("places response", response);
         })
         .error(function(errorResponse){
           reject(errorResponse);
