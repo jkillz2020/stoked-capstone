@@ -52,6 +52,9 @@ body {
 input {
   color: black; }
 
+#nav-color {
+  background-color: #e8f0ff; }
+
 #view-all {
   margin-bottom: 20px; }
 

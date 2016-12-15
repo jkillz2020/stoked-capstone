@@ -1,0 +1,14 @@
+<div id="snow"></div>
+<input type="search" name="placeSearch" placeholder="Find your resort!" ng-model="searchInfo"></input><button ng-click="getPlaces(searchInfo)">Find it!</button>
+
+  <div ng-repeat="place in placeInfo">
+
+  <div class="col-md-3">
+        <div class="row">{{place.name}}</div>
+        <div class="row">{{place.formatted_address}}</div>
+        <img ng-src="{{place.photos.html_attributions}}"></img>
+        <button type="button" class="btn btn-danger" ng-click="addNewFoundResort()">Add New Resort!</button>
+      </div>
+  </div>  
+
+  <!-- <img class="imageStandardized" ng-src="{{pin.url}}"></img> -->

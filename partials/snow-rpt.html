@@ -3,6 +3,11 @@
 <div ng-repeat="thingy in weatherInfo">
   
   <div class="col-md-3">
+        <div class="row">{{thingy.date.weekday}}</div>
         <div class="row">{{thingy.conditions}}</div>
+        <div class="row">Hi: {{thingy.high.fahrenheit}}</div>
+        <div class="row">Low: {{thingy.low.fahrenheit}}</div>
+        <div class="row">Precip: {{thingy.snow_allday.in}}"</div>
+        <img ng-src="{{thingy.icon_url}}"></img>
         </div>
     </div>  

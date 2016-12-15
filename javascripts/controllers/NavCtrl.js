@@ -11,8 +11,8 @@ app.controller('NavCtrl', function($scope){
       url:"#/resorts/list"
     }, 
     {
-      name:"New Resort",
-      url: "#/resorts/new"
+      name:"Find Resort",
+      url: "#/resorts/places"
     }
   ];
 });

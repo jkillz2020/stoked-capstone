@@ -1,0 +1,35 @@
+{
+  "Resorts":{
+    "resort0":{
+      "resortName": "Breckenridge Ski Resort",
+      "address": "500 Main Street Breckenridge, Colorado 80424, United States",
+      "zipcode": "80424",
+      "rating": "5",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+    },
+    "resort1":{
+      "resortName": "Park City Mountain Resort",
+      "address": "1345 Lowell Ave Park City, Utah 84060, United States",
+      "zipcode": "84060",
+      "rating": "4",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+    },
+    "resort2":{
+      "resortName": "Taos Ski Valley, Inc.",
+      "address": "116 Sutton Place Taos, New Mexico 87525, United States",
+      "zipcode": "87525",
+      "rating": "5",
+      "uid": "dLEbCuNL7UhQtWvyOVst5hA2xX52"
+      }
+    },
+  "users":{
+    "user0":{
+      "uid":"",
+      "username": "josh"
+    },
+    "user1":{
+      "uid":"dLEbCuNL7UhQtWvyOVst5hA2xX52",
+      "username": "a"
+    }
+  }
+  }
