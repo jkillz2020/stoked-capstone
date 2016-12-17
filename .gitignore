@@ -4,3 +4,4 @@ lib/bower_components
 javascripts/AppConstants.js
 apiKeys.json
 placesApiKeys.json
+public/
