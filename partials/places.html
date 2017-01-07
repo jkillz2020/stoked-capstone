@@ -1,6 +1,6 @@
 <div id="snow"></div>
-<input type="search" name="placeSearch" placeholder="Find your resort!" ng-model="searchInfo"></input><button ng-click="getPlaces(searchInfo)">Find it!</button>
-
+  <div><input type="search" name="placeSearch" placeholder="Find your resort!" ng-model="searchInfo"></input><button type="button" class="btn btn-danger" ng-click="getPlaces(searchInfo)">Find it!</button>
+  </div>
   <div ng-repeat="place in placeInfo">
 
   <div class="col-md-3">
@@ -11,4 +11,4 @@
       </div>
   </div>  
 
-  <!-- <img class="imageStandardized" ng-src="{{pin.url}}"></img> -->
+  

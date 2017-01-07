@@ -7,5 +7,5 @@ app.controller('RunDetailCtrl', function($scope, $routeParams, $rootScope, RunFa
   RunFactory.getSingleRun(runId).then(function(oneRun){
     oneRun.id=runId
     $scope.selectedRun = oneRun;
-  })
+    })
   })
