@@ -32,12 +32,4 @@ app.controller("PlacesApiCtrl", function($scope, $rootScope, $routeParams, $loca
     })
   }
 
-  // getPlaces();
 })
-
-// resortName: newResort.resortName,
-//           rating: newResort.rating,
-//           // state: newResort.state,
-//           address: newResort.streetAddress,
-//           // zipcode: newResort.zipcode,
-//           uid: newResort.uid
