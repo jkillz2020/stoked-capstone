@@ -1,4 +1,4 @@
- stoked-capstone
+ <h1>Stoked!Front-End Capstone</h1>
 
  hosted here: https://capstone-stoked.firebaseapp.com/#/auth 
 
